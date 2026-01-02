@@ -16,3 +16,15 @@ function undef() {
 }
 
 undef();
+
+
+function showDef() {
+    // [], {}, () => {} all of these are truthy, but "" is falsy
+    if ("") {
+        console.log("true");
+    } else {
+        console.log("false");
+    }
+}
+
+showDef();
