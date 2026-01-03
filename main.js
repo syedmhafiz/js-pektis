@@ -1,21 +1,18 @@
-function careForMe() {
+function careForMe(strr) {
     let hitMe = 42;
     let punchMe;
     if (hitMe > 30) {
         punchMe = 100;
         console.log("I need a hug");
     }
-    console.log(punchMe);
+    return `some ${strr}`;
 }
-
-careForMe();
 
 function undef() {
     let some;
     console.log(some);
 }
 
-undef();
 
 
 function showDef() {
@@ -27,4 +24,10 @@ function showDef() {
     }
 }
 
-showDef();
+
+function doSumthing(str1, str2, golla) {
+    const message = golla(str1);
+    console.log(message + " " + str2.toUpperCase());
+}
+
+doSumthing("thor", "cap", careForMe);
