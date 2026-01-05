@@ -31,3 +31,19 @@ function doSumthing(str1, str2, golla) {
 }
 
 doSumthing("thor", "cap", careForMe);
+
+
+
+const riley = {
+    name: "Riley",
+    game: "rdr2",
+    age: 25,
+    getAge() { // using an arrow function won't work because arrow functions don't have their own this, and uses the global scope this which is never initialized
+        return this.name + " " + this.game;
+    },
+    myMethod() {
+        console.log(this);
+    }
+};
+
+riley.myMethod();
