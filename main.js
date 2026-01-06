@@ -1,3 +1,5 @@
+import Club from "./club.js";
+
 function careForMe(strr) {
     let hitMe = 42;
     let punchMe;
@@ -47,3 +49,7 @@ const riley = {
 };
 
 riley.myMethod();
+
+
+const myClub = new Club("Arsenal", "England");
+console.log(myClub);
